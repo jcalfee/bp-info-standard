@@ -48,6 +48,8 @@ The current revision is compliant with the JSON schema Draft v7 - http://json-sc
 ### How to use it if you are Block Producer Candidate 
 Create a file named `bp.json` in the root of your domain. For instance `http://yourwebsite.com/bp.json` When you register your producer using the `system.regproducer` action, the url field should be filled with `http://yourwebsite.com`. **Do not put the bp.json file in the url.**
 
+If your API endpoints allow [CORS requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) you should also allow CORS requests to the bp.json file.
+
 ### Overriding jsons for specific chains
 
 You can override properties of the base `bp.json` file by creating a chain specific json file next to your base.
